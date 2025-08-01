@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO & SOCIAL SHARING (LISA'S IMPLEMENTATION) -->
+    <title>LocalCounsel AI | Secure, In-House AI for Modern Law Firms</title>
+    <meta name="description" content="LocalCounsel AI provides a dedicated, in-house AI appliance for law firms, ensuring 100% data privacy and attorney-client privilege. Request your invitation.">
+    
+    <!-- Open Graph / Facebook / LinkedIn -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="LocalCounsel AI | Secure, In-House AI for Modern Law Firms">
+    <meta property="og:description" content="Achieve AI efficiency while upholding absolute client trust. No cloud uploads. 100% secure.">
+    <meta property="og:url" content="https://your-username.github.io/your-repository-name/">
+    <!-- Note from Jack: I've created a self-contained SVG for the OG image. No external hosting needed. -->
+    <meta property="og:image" content="data:image/svg+xml,%3Csvg width='1200' height='630' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='1200' height='630' fill='%230A2A4D'/%3E%3Ctext x='600' y='280' font-family='Noto Sans, sans-serif' font-size='60' fill='white' text-anchor='middle' font-weight='bold'%3ELocalCounsel AI%3C/text%3E%3Ctext x='600' y='360' font-family='Noto Sans, sans-serif' font-size='32' fill='%23F0F4F8' text-anchor='middle'%3ESecure, In-House AI for Modern Law Firms%3C/text%3E%3C/svg%3E">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://your-username.github.io/your-repository-name/">
+    <meta property="twitter:title" content="LocalCounsel AI | Secure, In-House AI for Modern Law Firms">
+    <meta property="twitter:description" content="Achieve AI efficiency while upholding absolute client trust. No cloud uploads. 100% secure.">
+    <meta property="twitter:image" content="data:image/svg+xml,%3Csvg width='1200' height='630' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='1200' height='630' fill='%230A2A4D'/%3E%3Ctext x='600' y='280' font-family='Noto Sans, sans-serif' font-size='60' fill='white' text-anchor='middle' font-weight='bold'%3ELocalCounsel AI%3C/text%3E%3Ctext x='600' y='360' font-family='Noto Sans, sans-serif' font-size='32' fill='%23F0F4F8' text-anchor='middle'%3ESecure, In-House AI for Modern Law Firms%3C/text%3E%3C/svg%3E">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #0A2A4D; --secondary-color: #1A73E8; --accent-color: #F0F4F8;
+            --text-color: #333333; --light-text-color: #FFFFFF; --success-color: #1E8E3E;
+            --error-color: #D93025; --border-radius: 8px; --section-padding: 60px 20px;
+        }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        html { scroll-behavior: smooth; }
+        body { font-family: 'Noto Sans', sans-serif; line-height: 1.7; color: var(--text-color); background-color: #FFFFFF; }
+        .container { max-width: 1100px; margin: 0 auto; padding: 0 20px; }
+        section { padding: var(--section-padding); }
+        h1, h2, h3 { color: var(--primary-color); line-height: 1.3; margin-bottom: 20px; }
+        h1 { font-size: 2.8rem; } h2 { font-size: 2.2rem; } h3 { font-size: 1.5rem; }
+        p { margin-bottom: 20px; }
+        .btn { display: inline-block; background-color: var(--secondary-color); color: var(--light-text-color); padding: 15px 30px; text-decoration: none; border-radius: var(--border-radius); font-weight: 700; font-size: 1rem; transition: background-color 0.3s ease, transform 0.2s ease; border: none; cursor: pointer; }
+        .btn:hover { background-color: #1565C0; transform: translateY(-2px); }
+        .header { background-color: #fff; padding: 20px 0; border-bottom: 1px solid #e0e0e0; position: sticky; top: 0; z-index: 1000; }
+        .header .container { display: flex; justify-content: space-between; align-items: center; }
+        .logo { font-size: 1.5rem; font-weight: 700; color: var(--primary-color); }
+        .hero { background-color: var(--accent-color); text-align: center; padding: 80px 20px; }
+        .hero h1 { font-size: 3.2rem; }
+        .hero p { font-size: 1.2rem; max-width: 700px; margin: 0 auto 30px auto; }
+        
+        /* NEW: Social Proof Banner (Lisa's Idea) */
+        .trust-banner {
+            padding: 20px 0;
+            background-color: #fff;
+            text-align: center;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        .trust-banner p {
+            margin: 0;
+            color: #5f6368;
+            font-weight: 500;
+            font-size: 1rem;
+        }
+
+        .problem-section ul { list-style: none; padding-left: 0; }
+        .problem-section li { background-color: var(--accent-color); padding: 20px; border-radius: var(--border-radius); margin-bottom: 15px; border-left: 5px solid var(--secondary-color); }
+        .demo-section { text-align: center; }
+        .demo-box { background-color: #fff; border: 2px dashed #ccc; border-radius: var(--border-radius); padding: 40px; max-width: 800px; margin: 40px auto 0 auto; }
+        .demo-box h3 { margin-top: 0; }
+        .demo-box p { font-size: 1.1rem; }
+        .doc-icon { font-size: 3rem; color: var(--primary-color); }
+        .modal-overlay { position: fixed; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.6); display: none; justify-content: center; align-items: center; z-index: 2000; padding: 20px; }
+        .modal-content { background-color: #fff; padding: 40px; border-radius: var(--border-radius); max-width: 700px; width: 100%; max-height: 90vh; overflow-y: auto; position: relative; }
+        .modal-close { position: absolute; top: 15px; right: 20px; font-size: 2rem; font-weight: bold; color: #aaa; cursor: pointer; }
+        .modal-body h4 { font-size: 1.2rem; color: var(--primary-color); margin-top: 20px; border-bottom: 2px solid var(--accent-color); padding-bottom: 5px; }
+        .modal-body ul { list-style-position: inside; padding-left: 10px; margin-top: 10px; }
+        .loader { border: 5px solid #f3f3f3; border-top: 5px solid var(--secondary-color); border-radius: 50%; width: 50px; height: 50px; animation: spin 1s linear infinite; margin: 20px auto; }
+        @keyframes spin { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }
+        .security-banner { background-color: var(--success-color); color: white; padding: 15px; border-radius: var(--border-radius); margin-top: 30px; text-align: center; }
+        .solution-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 30px; margin-top: 40px; }
+        .solution-step { background-color: #fff; border: 1px solid #e0e0e0; padding: 30px; border-radius: var(--border-radius); text-align: center; }
+        .step-number { display: inline-block; width: 50px; height: 50px; line-height: 50px; border-radius: 50%; background-color: var(--primary-color); color: var(--light-text-color); font-size: 1.5rem; font-weight: 700; margin-bottom: 20px; }
+        .principles-section { background-color: var(--accent-color); }
+        .principles-content { display: flex; flex-direction: column; align-items: center; text-align: center; background-color: #fff; padding: 40px; border-radius: var(--border-radius); }
+        .principles-icon { width: 80px; height: 80px; margin-bottom: 20px; color: var(--primary-color); }
+        .principles-list { text-align: left; max-width: 600px; margin-top: 20px; }
+        .principles-list h4 { color: var(--primary-color); margin-top: 15px; }
+        .form-section { background-color: var(--primary-color); color: var(--light-text-color); text-align: center; }
+        .form-section h2 { color: var(--light-text-color); }
+        .form-container { max-width: 600px; margin: 40px auto 0 auto; }
+        .form-group { margin-bottom: 20px; text-align: left; }
+        .form-group label { display: block; margin-bottom: 8px; font-weight: 500; }
+        .form-group input { width: 100%; padding: 15px; border-radius: var(--border-radius); border: 1px solid #ccc; font-size: 1rem; font-family: 'Noto Sans', sans-serif; }
+        #thank-you-message { display: none; background-color: #0d3b66; padding: 30px; border-radius: var(--border-radius); font-size: 1.2rem; font-weight: 500; }
+        #form-error-message { display: none; color: var(--light-text-color); background-color: var(--error-color); padding: 10px; border-radius: var(--border-radius); margin-top: 15px; font-weight: 500; }
+        .footer { text-align: center; padding: 30px 20px; background-color: #f8f9fa; border-top: 1px solid #e0e0e0; }
+        @media (max-width: 768px) {
+            h1, .hero h1 { font-size: 2.2rem; } h2 { font-size: 1.8rem; } section { padding: 40px 20px; }
+            .modal-content { padding: 20px; }
+        }
+    </style>
+</head>
+<body>
+
+    <header class="header">
+        <div class="container">
+            <div class="logo">LocalCounsel AI</div>
+            <a href="#contact-form" class="btn">Request an Invitation</a>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <h1>Achieve AI Efficiency. Uphold Client Trust.</h1>
+                <p>Introducing LocalCounsel AI: A dedicated, in-house AI system for law firms. It provides powerful legal analysis while ensuring no client data ever leaves your office.</p>
+                <a href="#contact-form" class="btn">Schedule a Confidential Briefing</a>
+            </div>
+        </section>
+
+        <!-- NEW: SOCIAL PROOF BANNER -->
+        <div class="trust-banner">
+            <div class="container">
+                <p>As envisioned for forward-thinking firms from New York to Singapore</p>
+            </div>
+        </div>
+
+        <section class="problem-section container">
+            <h2 style="text-align: center;">Navigating the Confidentiality Risks of Cloud AI</h2>
+            <p style="text-align: center; max-width: 800px; margin: 0 auto 40px auto;">We understand the unique challenges modern firms face. How do you embrace powerful new technology while honoring your fundamental duties to your clients?</p>
+            <ul>
+                <li><h3>Attorney-Client Privilege</h3><p>How can we leverage AI while ensuring client data uploads never compromise attorney-client privilege?</p></li>
+                <li><h3>Ethical Compliance</h3><p>With evolving technology, maintaining strict compliance with the Bar's rules on confidentiality is a primary concern for all leading firms.</p></li>
+                <li><h3>Reputation is Everything</h3><p>In our profession, trust is the most valuable asset. A data breach, no matter how small, can impact a reputation built over decades.</p></li>
+            </ul>
+        </section>
+
+        <section class="demo-section" style="background-color: var(--accent-color);">
+            <div class="container">
+                <h2>Experience the Power, Instantly</h2>
+                <p>See for yourself how LocalCounsel AI can summarize and analyze a document in seconds—all with the guarantee of zero cloud exposure.</p>
+                <div class="demo-box">
+                    <div class="doc-icon"><svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 384 512" fill="currentColor"><path d="M0 64C0 28.7 28.7 0 64 0H224V128c0 17.7 14.3 32 32 32H384V448c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V64zm384 64H256V0L384 128z"/></svg></div>
+                    <h3>Sample Document: Standard Non-Disclosure Agreement</h3>
+                    <p>Click below to simulate a secure, on-device analysis.</p>
+                    <button id="run-demo-btn" class="btn">Analyze Document Now</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="solution-section">
+            <div class="container">
+                <h2 style="text-align: center;">Your Firm's Dedicated, In-House AI Partner</h2>
+                <p style="text-align: center; max-width: 800px; margin: 0 auto;">LocalCounsel AI is a physical, secure appliance that works exclusively on your local network. It's the power of a large language model with the security of an air gap.</p>
+                <div class="solution-grid">
+                    <div class="solution-step"><div class="step-number">1</div><h3>Simple Setup</h3><p>We deliver a pre-configured system. Simply connect it to power and your local office network. No complex IT setup required.</p></div>
+                    <div class="solution-step"><div class="step-number">2</div><h3>Secure Upload</h3><p>From your computer, access a private portal to upload contracts or case files. Your data stays on your local network, always.</p></div>
+                    <div class="solution-step"><div class="step-number">3</div><h3>Instant Analysis</h3><p>Receive summaries, find key clauses, and ask questions in seconds. All analysis is performed inside the system, completely offline.</p></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="principles" class="principles-section">
+            <div class="container">
+                <div class="principles-content">
+                    <div class="principles-icon"><svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512" fill="currentColor"><path d="M436 480h-20V24c0-13.3-10.7-24-24-24H56C42.7 0 32 10.7 32 24v456H12c-6.6 0-12 5.4-12 12v20h448v-20c0-6.6-5.4-12-12-12zM128 76c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12h-40c-6.6 0-12-5.4-12-12V76zm0 96c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12h-40c-6.6 0-12-5.4-12-12v-40zm0 96c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12h-40c-6.6 0-12-5.4-12-12v-40zm128-192c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12h-40c-6.6 0-12-5.4-12-12V76zm0 96c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12h-40c-6.6 0-12-5.4-12-12v-40zm0 96c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12h-40c-6.6 0-12-5.4-12-12v-40z"/></svg></div>
+                    <h2>Built on a Foundation of Principle</h2>
+                    <p>LocalCounsel AI was created to address a fundamental conflict: the need for law firms to innovate while upholding their non-negotiable duty of client confidentiality. Our work is guided by three core principles.</p>
+                    <div class="principles-list">
+                        <h4>1. Absolute Data Sovereignty</h4><p>Your data is your data. It should never be uploaded to a third-party cloud, period. Our solution ensures client information stays within your firm's physical control, always.</p>
+                        <h4>2. Purpose-Built Simplicity</h4><p>Powerful technology should be an asset, not a burden. Our system is designed as a simple appliance that works out of the box, requiring no complex IT management or ongoing maintenance.</p>
+                        <h4>3. Long-Term Partnership</h4><p>We view ourselves as partners in your firm's success. We are committed to providing dedicated support and evolving our product based on the real-world needs of the legal community.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact-form" class="form-section">
+            <div class="container">
+                <h2>An Invitation to Become a Foundation Partner</h2>
+                <p>We are inviting a select group of forward-thinking firms to become our Foundation Partners. Participants receive dedicated support and will play a key role in shaping the future of secure legal AI.</p>
+                <!-- MODIFIED: Added Tom's pricing signal and Lisa's scarcity signal -->
+                <ul style="list-style: none; padding: 0; max-width: 500px; margin: 20px auto; text-align: left;">
+                    <li style="margin-bottom: 10px;">✓ Preferential pricing designed for early partners, representing a significant value on an enterprise-grade system.</li>
+                    <li style="font-weight: bold;">✓ Invitation slots are limited to the first 20 Foundation Partner firms.</li>
+                </ul>
+                
+                <div class="form-container">
+                    <form id="lead-form">
+                        <div class="form-group"><label for="name">Your Name</label><input type="text" id="name" name="name" required></div>
+                        <div class="form-group"><label for="firmName">Law Firm Name</label><input type="text" id="firmName" name="firmName" required></div>
+                        <div class="form-group"><label for="email">Your Email Address</label><input type="email" id="email" name="email" required></div>
+                        <button type="submit" id="submit-button" class="btn">Request My Invitation</button>
+                    </form>
+                    <!-- MODIFIED: Added Lisa's virality/sharing feature -->
+                    <div id="thank-you-message">
+                        <h3>Thank you!</h3>
+                        <p>We have received your request and will be in touch shortly.</p>
+                        <hr style="margin: 20px 0; border-color: rgba(255,255,255,0.2);">
+                        <p style="font-size: 1rem; margin-bottom: 15px;">Know a colleague who would also value this? Help them secure their firm's data.</p>
+                        <a id="share-btn" class="btn" style="background-color: #fff; color: var(--primary-color);">Share with a Colleague</a>
+                    </div>
+                    <div id="form-error-message">An error occurred while submitting your request. Please try again later.</div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 LocalCounsel AI. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <div id="demo-modal" class="modal-overlay">
+        <div class="modal-content">
+            <span id="modal-close-btn" class="modal-close">&times;</span>
+            <div id="modal-loader" class="modal-body">
+                <h3>Analyzing Document...</h3><div class="loader"></div><p style="text-align: center;">Simulating secure, on-device processing. Please wait.</p>
+            </div>
+            <div id="modal-results" class="modal-body" style="display: none;">
+                <h3>Analysis Complete: Standard NDA</h3>
+                <h4>Key Information Summary:</h4><ul><li><strong>Document Type:</strong> Mutual Non-Disclosure Agreement</li><li><strong>Disclosing Parties:</strong> Party A, Party B</li><li><strong>Term of Confidentiality:</strong> 3 Years from Effective Date</li><li><strong>Governing Law:</strong> State of New York</li></ul>
+                <h4>Potential Clauses of Interest:</h4><ul><li><strong>Non-Solicitation:</strong> A clause preventing the hiring of the other party's employees is present (Section 5.2).</li><li><strong>Residuals Clause:</strong> A standard residuals clause is included, allowing use of information retained in memory.</li><li><strong>No License:</strong> The agreement explicitly states no license to intellectual property is granted.</li></ul>
+                <div class="security-banner"><strong>✓ Secure Analysis:</strong> This analysis was performed instantly and securely, just as it would on your own LocalCounsel AI device. No data was sent to the cloud.</div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const leadForm = document.getElementById('lead-form');
+        const submitButton = document.getElementById('submit-button');
+        const thankYouMessage = document.getElementById('thank-you-message');
+        const formErrorMessage = document.getElementById('form-error-message');
+        
+        /******************************************************************
+         * IMPORTANT: PASTE YOUR GOOGLE APPS SCRIPT URL BELOW
+         ******************************************************************/
+        const SCRIPT_URL = 'YOUR_GOOGLE_APPS_SCRIPT_URL_HERE'; 
+
+        leadForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            submitButton.disabled = true;
+            submitButton.textContent = 'Submitting...';
+            formErrorMessage.style.display = 'none';
+            const formData = new FormData(leadForm);
+            fetch(SCRIPT_URL, { method: 'POST', body: formData })
+                .then(response => response.json())
+                .then(data => {
+                    if (data.result === 'success') {
+                        leadForm.style.display = 'none';
+                        thankYouMessage.style.display = 'block';
+                    } else { throw new Error(data.message || 'An unknown error occurred.'); }
+                })
+                .catch(error => {
+                    console.error('Error!', error.message);
+                    formErrorMessage.style.display = 'block';
+                    submitButton.disabled = false;
+                    submitButton.textContent = 'Request My Invitation';
+                });
+        });
+
+        const demoModal = document.getElementById('demo-modal');
+        const runDemoBtn = document.getElementById('run-demo-btn');
+        const closeModalBtn = document.getElementById('modal-close-btn');
+        const modalLoader = document.getElementById('modal-loader');
+        const modalResults = document.getElementById('modal-results');
+        const openModal = () => {
+            demoModal.style.display = 'flex';
+            modalLoader.style.display = 'block';
+            modalResults.style.display = 'none';
+            setTimeout(() => { modalLoader.style.display = 'none'; modalResults.style.display = 'block'; }, 2500);
+        };
+        const closeModal = () => { demoModal.style.display = 'none'; };
+        runDemoBtn.addEventListener('click', openModal);
+        closeModalBtn.addEventListener('click', closeModal);
+        demoModal.addEventListener('click', (event) => { if (event.target === demoModal) { closeModal(); } });
+        document.addEventListener('keydown', (event) => { if (event.key === 'Escape' && demoModal.style.display === 'flex') { closeModal(); } });
+
+        // NEW: Virality Feature (Lisa's Idea)
+        const shareBtn = document.getElementById('share-btn');
+        shareBtn.addEventListener('click', () => {
+            const subject = "Thought you might find this interesting: LocalCounsel AI";
+            const body = "Hi,%0D%0A%0D%0AI came across this tool, LocalCounsel AI, which is a secure, in-house AI appliance for law firms. It's designed to provide AI analysis without any client data ever leaving the office.%0D%0A%0D%0AThought it might be relevant for you. Here's the link:%0D%0A" + window.location.href;
+            window.location.href = `mailto:?subject=${subject}&body=${body}`;
+        });
+    </script>
+
+</body>
+</html>
